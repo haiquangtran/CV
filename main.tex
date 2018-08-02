@@ -1,0 +1,331 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11.5pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle[fullrules]{banking} % style options are 'casual' (default), 'classic', 'oldstyle', 'fancy' and 'banking'
+\moderncvcolor{custom}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75, top=2cm, bottom=2cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+  
+% personal data
+\name{\textcolor{sectionHint}{Hai}}{\textcolor{sectionHint}{Tran}}
+\title{Software Engineer}                           
+\address{Wellington, New Zealand - Relocating to Melbourne, Australia}{}{}
+\homepage{www.haitran.world}
+\phone[mobile]{~+64 22~180~0852}   
+\email{hai.quang.tran@gmail.com}     
+\social[linkedin]{www.linkedin.com/in/haiquangtran}
+\social[github]{www.github.com/haiquangtran}
+
+
+\photo[103pt][]{portrait}  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\hfill \break
+
+\section{\textcolor{sectionHeading}{SUMMARY}}
+\cvitem{}{
+An intermediate full stack developer passionate about developing quality software with a strong emphasis on best practices, object-oriented programming (OOP), design patterns, user experience, testability and re-usability. Having excellent communication \& interpersonal skills, I have been CIO for a startup company. With over 2.5 years commercial experience in the full software development life cycle (analysis, design, implementation, testing, deployment and maintenance of software), I have successfully delivered key projects for major New Zealand companies such as ANZ Bank of New Zealand, New Zealand Post, New Zealand Fire Service and more. I am now taking my knowledge to Melbourne, Australia to tackle new challenges and contribute to a high-performing team. }
+
+
+% -----------------------------------------------------
+%                   PROJECTS
+% -----------------------------------------------------
+
+%  -----------------------------------------------------
+%                   EXPERIENCE
+%  -----------------------------------------------------
+
+\section{\textcolor{sectionHeading}{EXPERIENCE}}
+
+%  -----------------------------------------------------
+%                   PROVOKE
+%  -----------------------------------------------------
+
+\cventry{2016 March -- 2018 July}{Software Engineer}{Provoke Solutions}{Wellington}{}{
+    \begin{itemize}
+        \item Member of bespoke software solutions team - analysing, designing, developing, documenting, testing, and maintaining enterprise software based on S.O.L.I.D design principles utilizing Microsoft technology (ASP.NET MVC etc) and modern web frameworks (AngularJS 2 etc).
+        \item Owned and developed an internal leave system that streamlined the overall leave process by automating tasks when users applied for leave (including timesheets, resourcing, emails etc).
+        % \item Experienced in an agile and environment such as Scrum with a dedicated Scrum Master and experienced in agile methodologies and ceremonies.
+        \item Worked effectively in an agile environment with other developers, analysts, project managers, product owners and clients to continually improve existing software systems and processes.
+        \item As part of an agile high-performing Scrum team with a dedicated Scrum master, performed cross-functional tasks to get projects across the line including documentation, deployment, manual testing, debugging/troubleshooting, automation testing, unit testing, regression testing, and architecting solutions.
+        \item Mentored developers, shared knowledge and provided code reviews with constructive comments
+        \item Consistently delivered well-designed and well-tested features for various clients, improving both customer and admin experiences. 
+        % \item As part of the agile process - created, refined and sized stories
+    \end{itemize}
+}
+
+%  -----------------------------------------------------
+%                   GO SLICK
+%  -----------------------------------------------------
+
+\cventry{2015 Dec -- 2016 July}{Co-Founder \& Chief Information Officer}{GoSlick}{Wellington}{}{
+% Slick provides a solution to the elderly and the physically restricted allowing them to have more control of their home devices, increasing their independence. 
+% Slick flicks a switch on or off through a remote button or mobile application, allowing the physically restricted to have more control of their home devices, increasing their independence.  
+\begin{itemize}%
+    \item Built a secure, reliable and fully responsive end to end web application, including a RESTful API using AngularJS, PostgreSQL, and Ruby On Rails (RoR).
+    \item Scrum Master to a team of three, managing the agile practices such sprint planning, stand ups, sprint reviews, sprint retrospectives etc, encouraging collaboration and innovation between the team. 
+    % \item Gathered feedback from the market, collaborated with clients and numerous presentations to audiences of 30+ people
+    % \item Applied Search Engine Optimization (SEO) techniques for increased discoverability and collected analytics for insights into trends and customers.
+    % \item Completed numerous presentations to an audience of 30+ people 
+\end{itemize}}
+
+%  -----------------------------------------------------
+%                   EMANZ
+%  -----------------------------------------------------
+
+\cventry{2014 Dec -- 2015 March}{Web Developer (part time)}{Energy Management Association of New Zealand}{Wellington}{}{
+\begin{itemize}%
+    \item Contributed to the development of the public-facing website (\customlink{http://www.emanz.org.nz/}) used to inform New Zealand about energy management and the use of energy (Drupal, PHP, HTML/CSS, XAMPP stack)
+    % \item Successfully learnt unfamiliar technologies (Drupal, PHP, HTML/CSS, XAMPP stack) to build solutions from design scaffolds such as fully implementing the page: \customlink{http://www.emanz.org.nz/energy-specialists} and more.
+\end{itemize}}
+
+%  -----------------------------------------------------
+%                   SOLNET SOLUTIONS
+%  -----------------------------------------------------
+
+\cventry{2014 Nov -- 2015 Feb}{Software Engineer Intern}{Solnet Solutions}{Wellington}{}{
+\begin{itemize}%
+    \item Analysis, design, implementation and maintenance of a internal support ticket system for support staff to manage and prioritize support tickets (AngularJS 1, HTML/CSS, Sass, Java, MongoDB).
+    \item Built the front-end test suite, writing unit tests and functional end to end tests using Karma/Jasmine and Selenium, enabling regression testing to be executed.
+\end{itemize}}
+
+\section{\textcolor{sectionHeading}{CLIENT PROJECTS}}
+%  -----------------------------------------------------
+%                   ANZ
+%  -----------------------------------------------------
+    \cvitem{ANZ Bank New Zealand Limited (ANZ)}{One of New Zealand’s largest profit \& assets companies and New Zealand's largest rural banker with a market share of 39\%.}
+    % ANZ helps New Zealanders achieve their financial aspirations.
+    \begin{itemize}
+        \item \textbf{Projects:} ANZ Online Store, Sales Development Platform, Store Admin, and Network Management Tool
+        \item \textbf{Technology stack:} ASP.NET MVC, C\#, JQuery, HTML/CSS, Sass
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Notable achievements:}
+         \begin{itemize}
+        %   \item Analysed, designed, implemented and maintained features for ANZ's internal Network Management Tool, enabling ANZ staff to search \& filter ANZ branches and manage documents regarding key building information such as seismic activity. 
+        \item Analysed, designed, implemented and maintained ANZ's public-facing online products such as term investments (\customlink{https://onlinestore.anz.co.nz/get/term-investment/eligibility}), accounts (\customlink{https://onlinestore.anz.co.nz/get/account/eligibility}) and more.
+        \item Debugged and resolved an intermittent timeout issue that was causing internet banking customers to be kicked out of their online term deposit application at inconsistent intervals.
+        \item Took ownership of the unit test coverage report, ensuring the unit test coverage from the team increased after every sprint and meaningful tests were written for quality of code.
+        \item Built reusable and extensible form components used in multiple forms, saving time in the development of new product forms.    
+        % \item Identified inefficient LINQ queries that made multiple round trip calls to the database. Created a story to rewrite the query for performance and allowed client to prioritize it so team can address it in future sprints. 
+    \end{itemize}
+    \end{itemize}
+    %  -----------------------------------------------------
+    %                   NZ POST
+    %  -----------------------------------------------------
+    \hfill \break
+    \cvitem{New Zealand Post (NZ Post)}{
+    A New Zealand-based delivery company, delivering just under 600 million items to around 1.98 million delivery points in 2007.}
+    % - delivering parcels, packages and mail for businesses and consumers. 
+    \begin{itemize}
+        \item \textbf{Projects:} New Zealand Post Mobile app
+        \item \textbf{Technology stack:} Cordova, Ionic framework 1, TypeScript 2 and AngularJS 1
+    \end{itemize}
+    \begin{itemize}
+        \item Analysed, designed, developed and maintained the redesigned New Zealand Post mobile app with over 10,000+ installs on the Google Play Store, helping New Zealander's track their parcels.
+        \item Tech lead and ownership of the implementation of deep linking and tracking of consignment items in the app, allowing NZ Post customers to open the app from hyperlinks and track multiple parcels associated with a consignment parcel.
+        \item Participant of the Microsoft Bot Hackfest as part of the NZ Post team, building a chatbot for tracking NZ Post parcels to reduce stress on the NZ Post call centre. 
+    \end{itemize}
+    
+    \hfill \break
+    \textbf{Marram Community Trust}
+    \begin{itemize}
+        \item \textbf{Technology stack:} ASP.NET MVC, C\#, HTML/CSS, AngularJS 2
+        \begin{itemize}
+            \item  Analysed, designed, developed and maintained the fully responsive mobile website for booking holiday homes (\customlink{https://m.marram.co.nz/}).
+        \end{itemize}
+    \end{itemize}
+    \hfill \break
+    \textbf{New Zealand Fire Service}
+    \begin{itemize}
+        \item \textbf{Technology stack:} ASP.NET, MVC, C\#, HTML/CSS, Sass, Bootstrap
+        % \item \textbf{Notable achievements:}
+        \begin{itemize}
+            \item Implemented and maintained the New Zealand Fire Service Levy website (\customlink{http://www.firelevy.co.nz/}).
+        \end{itemize}
+    \end{itemize}
+
+% %  -----------------------------------------------------
+% %                   SOFT SKILLS
+% %  -----------------------------------------------------
+% \section{\textcolor{sectionHeading}{SOFT SKILLS}}
+% \cvitem{}{Excellent Communication and collaboration skills (Team player)}
+% \cvitem{}{Adaptable}
+% \cvitem{}{Takes initiative and ownership of responsibilities}
+% \cvitem{}{Good attitude, willingness to learn, and open to feedback}
+% \cvitem{}{Attention to detail}
+% \cvitem{}{results oriented, ownership of solutions, takes initiative, client management, curious and eager to learn, interpersonal and communication skills}
+%  -----------------------------------------------------
+%                   EDUCATION
+%  -----------------------------------------------------
+%  -----------------------------------------------------
+%                   TECHNICAL SKILLS
+%  -----------------------------------------------------
+
+\section{\textcolor{sectionHeading}{TECHNICAL SKILLS}}
+\cvitem{Programming Languages}{C\#, Java, JavaScript, TypeScript, SQL, Python}
+\cvitem{Frameworks \& Tools}{.NET, ASP.NET MVC, HTML/CSS, jQuery/AJAX, Bootstrap, Angular (1 \& 2), Sass/Less, Entity Framework, LINQ, IIS, Moq, NUnit, Scrum, Kanban, Selenium, XML/JSON, .NET WebAPI, Karma/Jasmine, Azure and more. }
+\cvitem{Mobile Development}{Apache Cordova, Android, Ionic Framework}
+\cvitem{Databases}{SQL Server, PostgreSQL}
+\cvitem{Version Control}{Git, SVN}
+
+\section{\textcolor{sectionHeading}{EDUCATION}}
+\cventry{2012--2016}{Bachelor of Engineering (Hons), \textbf{First Class Honours} in Software Engineering}{Victoria University of Wellington}{Wellington}{}{}  
+% \begin{itemize}
+%     \item First Class Honours in Software Engineering (2015)
+%     % \item Dean's list for academic excellence (2015)
+% \end{itemize}
+
+\section{\textcolor{sectionHeading}{CERTIFICATIONS}}
+\cvlistitem{Microsoft Certified Professional (2016)}
+\cvlistitem{Microsoft Certified Solutions Developer: Web Applications (2016)}
+\cvlistitem{Microsoft Certified Solutions Developer: App Builder (charter member) (2016)}
+\cvlistitem{Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3 (2016)}
+\cvlistitem{Microsoft Certified Solutions Associate: Web Applications (charter member) (2016)}
+
+% \cvlistitem{Victoria entrepreneur boot-camp participant (2015-2016)}
+% \cvlistitem{First Class Honours in Software Engineering (2015)}
+% \cvlistitem{Dean's List for academic excellence (2015)}
+% \cvlistitem{Student Representative for Engineering 301 – Project management at Victoria University (2014)}
+% \cvlistitem{Rotary Club of Eastern Hutt Scholarship (2011)}
+% \cvlistitem{Whitireia Star Programming Course (2011)}
+
+%  -----------------------------------------------------
+%                   REFERENCES
+%  -----------------------------------------------------
+
+\section{\textcolor{sectionHeading}{REFERENCES}}
+\cvitem{}{References available upon request.}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% %-----      COVER LETTER       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+\end{document}
+
+%% end of file `template.tex'.

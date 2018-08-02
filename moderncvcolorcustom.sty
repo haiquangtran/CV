@@ -1,0 +1,72 @@
+%% start of file `moderncvcolorgreen.sty'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+%-------------------------------------------------------------------------------
+%                identification
+%-------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncvcolorcustom}[2015/07/28 v2.0.0 modern curriculum vitae and letter color scheme: green]
+
+
+
+%-------------------------------------------------------------------------------
+%                color scheme definition
+%-------------------------------------------------------------------------------
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.35,0.70,0.30} % green, {0.35,0.70,0.30} old green
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+% DEFINE COLOURS
+\definecolor{sectionHeading}{rgb}{0.35,0.70,0.30}
+\definecolor{sectionHint}{rgb}{0.35,0.70,0.30}
+
+% BULLET POINTS
+\renewcommand{\labelitemi}{\textcolor{color1}{$\bullet$}}
+\renewcommand{\labelitemii}{\textcolor{color1}{$\rightarrow$}}
+
+%-------------------------------------------------------------------------------
+%                Photo definition
+%-------------------------------------------------------------------------------
+% POSITION OF THE CONTENT OF THE TITLE
+
+\patchcmd{\makehead}
+  {\setlength{\makeheaddetailswidth}{10\textwidth}}
+  {\setlength{\makeheaddetailswidth}{10\textwidth}}
+  {}
+  {}
+  
+% This adds the photo to the title for the banking moderncv style.
+\patchcmd{\makehead}
+  {\\[2.5em]}
+  {\hspace{-2.0em}\hfil\raisebox{-1.5cm}{\textcolor{color2}{\framebox{\includegraphics[width=\@photowidth]{\@photo}}}\\[1em]}}
+  {}
+  {}
+
+%-------------------------------------------------------------------------------
+%                links definition
+%-------------------------------------------------------------------------------
+
+\newcommand{\customlink}[2][sectionHint]{\href{#2}{\color{#1}{#2}}}%
+
+%-------------------------------------------------------------------------------
+%                Social links definition
+%-------------------------------------------------------------------------------
+\makeatletter
+\RenewDocumentCommand{\social}{O{}O{}m}{%
+  \ifthenelse{\equal{#2}{}}%
+    {%
+      \ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httplink[#3]{#3}}}{}%
+      \ifthenelse{\equal{#1}{github}}  {\collectionadd[github]{socials}  {\protect\httplink[#3]{#3}}}     {}%
+    }
+    {\collectionadd[#1]{socials}{\protect\httplink[#3]{#2}}}}
+\makeatother
+
+\endinput
+
+
+%% end of file `moderncvcolorgreen.sty'.
